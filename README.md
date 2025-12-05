@@ -190,14 +190,6 @@ Your data remains *yours* unless you choose to export it.
 
 ---
 
-## Roadmap (Optional)  
-- Advanced editing workflow  
-- Per-project presets  
-- Local image tagging  
-- More model configuration options
-
----
-
 ## Contributing  
 Issues and PRs welcome.
 
