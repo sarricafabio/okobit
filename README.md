@@ -136,7 +136,7 @@ You enter it on first launch.
 It is stored **locally only** and never sent to any server except Google’s model endpoints.
 
 ### 2. Create or Select a Project  
-Each project represents one conversation with **Nano Banana Pro** and its image generations from **Gemini 3 Pro Image**.
+Each project represents one conversation and its image generations from **Gemini 3 Pro Image**.
 
 ### 3. Attach Files  
 Drag them in or use the paperclip.  
@@ -144,7 +144,6 @@ Large images are resized automatically.
 
 ### 4. Generate Images  
 Click **Generate** to produce images with Gemini 3 Pro Image.  
-Watch responses stream live.
 
 ### 5. Save Results  
 Bookmark images to add them to the global gallery.
@@ -190,4 +189,4 @@ Issues and PRs welcome.
 ---
 
 ## License  
-MIT (or your license of choice)
+MIT. Feel free to modify and redistribute.
