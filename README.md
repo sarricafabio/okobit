@@ -1,5 +1,5 @@
 # Okobit  
-A slightly less cumbersome way to use **Nano Banana Pro** and **Gemini 3 Pro Image**.
+A (slightly) less cumbersome way to use **Nano Banana Pro**.
 
 **BYOK (Bring Your Own Key).**  
 *Mobile friendly. Zero backend. Runs entirely client-side.*  
@@ -10,7 +10,7 @@ Try it instantly at: **https://okobit.surge.sh**
 ---
 
 ## Overview  
-Okobit is a **BYOK** (Bring Your Own Key), local-first, private, browser‑based interface for generating and editing images with **Gemini 3 Pro Image**, and chatting with **Nano Banana Pro**.  
+Okobit is a **BYOK** (Bring Your Own Key), local-first, private, browser‑based interface for generating and editing images with **Gemini 3 Pro Image**, A.K.A. Nano Banana Pro.
 
 It gives you a streamlined chat workflow, high-quality image generation, a global gallery, editing tools, prompt history, data import/export, and full offline persistence through IndexedDB.
 
@@ -31,18 +31,17 @@ Your API key stays on your device and is used only for direct model calls.
 - Clean, fast chat-style workflow  
 - Streaming text feedback  
 - Attach multiple files  
-- Aspect ratio and resolution controls  
-- “Continue generation” to refine or expand results  
+- Aspect ratio and resolution controls    
 - Automatic image resizing and thumbnail creation  
 
 [Be patient: showcase images coming soon!]
 
-### Conversation with Nano Banana Pro  
+### Conversational UI 
 - Full conversational context  
 - Project-based history  
 - Automatic titles  
 - Edit, retry, fork, and regenerate  
-- Optional detailed stats  
+- Optional detailed stats for nerds (seconds to completion, process finish code, token/cost estimation)
 
 ### Project Management  
 - Unlimited projects  
@@ -61,19 +60,16 @@ Your API key stays on your device and is used only for direct model calls.
 [Be patient: images coming soon!]
 
 ### Prompt Workflow  
-- “Magic Prompt” enhancement (Nano Banana Pro)  
+- “Magic Prompt” enhancement (Using Gemini 2.5 Flash Lite for cost effectiveness and speed)  
 - Recent and Saved prompt tabs  
 - Multi-select for cleanup  
 - One-click insertion into chat  
 
 ### File Attachments  
 Supports:  
-- images  
-- videos  
-- audio  
+- images 
 - PDFs  
 - text/code formats  
-Smart MIME detection + safe fallbacks.
 
 ### Data Portability  
 - Export full backup to ZIP  
@@ -175,9 +171,7 @@ In Settings you can:
 - **Dexie.js** (IndexedDB)  
 - **TailwindCSS**  
 - **JSZip**  
-- **@google/genai** (Nano Banana Pro + Gemini 3 Pro Image)
-
-No backend required.
+- **@google/genai**
 
 ---
 
