@@ -3,7 +3,7 @@ A (slightly) less cumbersome way to use **Nano Banana Pro**.
 
 **BYOK (Bring Your Own Key).**  
 *Mobile friendly. Zero backend. Runs entirely client-side.*  
-Try it instantly at: **https://okobit.surge.sh**
+Try it instantly at: **https://okobit.netlify.app/**
 
 [Be patient: showcase images coming soon!]
 
