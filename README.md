@@ -1,9 +1,7 @@
 # Okobit  
 A (slightly) less cumbersome way to use **Nano Banana Pro**.
 
-
-<img alt="okobit hero" src="https://github.com/user-attachments/assets/b7ffb476-6a0c-4f90-986e-616c96b20e64" />
-
+![Hero](./assets/okobit%20hero.jpg)
 
 **BYOK (Bring Your Own Key).**  
 *Mobile friendly. Zero backend. Runs entirely client-side.*  
@@ -23,7 +21,7 @@ Your API key stays on your device and is used only for direct model calls.
 
 ## Key Features
 
-<img alt="okobit how" src="https://github.com/user-attachments/assets/5f16ad1b-20c0-48b3-9ddc-42a1b8c9694b" />
+![How it works](./assets/okobit%20how.jpg)
 
 ### BYOK (Bring Your Own Key)
 - You provide your own Google API key  
@@ -45,7 +43,7 @@ Your API key stays on your device and is used only for direct model calls.
 - Edit, retry, fork, and regenerate  
 - Optional detailed stats for nerds (seconds to completion, process finish code, token/cost estimation)
 
-<img alt="Clean UI" src="https://github.com/user-attachments/assets/735954db-303a-4e6f-a19f-c288a1504957" />
+![Clean UI](./assets/Clean%20UI.jpg)
 
 ### Project Management  
 - Unlimited projects  
@@ -53,7 +51,7 @@ Your API key stays on your device and is used only for direct model calls.
 - Auto-persisted in IndexedDB  
 - Fast switching with keyboard shortcuts  
 
-<img alt="Accent" src="https://github.com/user-attachments/assets/b3b75cbb-d410-4ed3-beba-ac0b1df0c66d" />
+![Accent color](./assets/Accent.jpg)
 
 ### Image Management  
 - Message-attached images  
@@ -63,7 +61,7 @@ Your API key stays on your device and is used only for direct model calls.
 - Bulk select, delete, unbookmark, ZIP download  
 - Automatic cleanup of unreferenced images
 - 
-<img alt="gallery" src="https://github.com/user-attachments/assets/fd372f6d-bb1f-4b52-91fc-addf747488c9" />
+![Gallery](./assets/gallery.jpg)
 
 ### Prompt Workflow  
 - “Magic Prompt” enhancement (Using Gemini 2.5 Flash Lite for cost effectiveness and speed)  
