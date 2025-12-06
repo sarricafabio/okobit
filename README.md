@@ -1,11 +1,13 @@
 # Okobit  
 A (slightly) less cumbersome way to use **Nano Banana Pro**.
 
+
+<img alt="okobit hero" src="https://github.com/user-attachments/assets/b7ffb476-6a0c-4f90-986e-616c96b20e64" />
+
+
 **BYOK (Bring Your Own Key).**  
 *Mobile friendly. Zero backend. Runs entirely client-side.*  
 Try it instantly at: **https://okobit.netlify.app/**
-
-[Be patient: showcase images coming soon!]
 
 ---
 
@@ -21,6 +23,8 @@ Your API key stays on your device and is used only for direct model calls.
 
 ## Key Features
 
+<img alt="okobit how" src="https://github.com/user-attachments/assets/5f16ad1b-20c0-48b3-9ddc-42a1b8c9694b" />
+
 ### BYOK (Bring Your Own Key)
 - You provide your own Google API key  
 - Key is stored locally in the browser  
@@ -34,8 +38,6 @@ Your API key stays on your device and is used only for direct model calls.
 - Aspect ratio and resolution controls    
 - Automatic image resizing and thumbnail creation  
 
-[Be patient: showcase images coming soon!]
-
 ### Conversational UI 
 - Full conversational context  
 - Project-based history  
@@ -43,11 +45,15 @@ Your API key stays on your device and is used only for direct model calls.
 - Edit, retry, fork, and regenerate  
 - Optional detailed stats for nerds (seconds to completion, process finish code, token/cost estimation)
 
+<img alt="Clean UI" src="https://github.com/user-attachments/assets/735954db-303a-4e6f-a19f-c288a1504957" />
+
 ### Project Management  
 - Unlimited projects  
 - Pin, rename, delete, fork  
 - Auto-persisted in IndexedDB  
 - Fast switching with keyboard shortcuts  
+
+<img alt="Accent" src="https://github.com/user-attachments/assets/b3b75cbb-d410-4ed3-beba-ac0b1df0c66d" />
 
 ### Image Management  
 - Message-attached images  
@@ -55,9 +61,9 @@ Your API key stays on your device and is used only for direct model calls.
 - 50-image performance-conscious cap  
 - Lightbox with zoom, pan, and keyboard nav  
 - Bulk select, delete, unbookmark, ZIP download  
-- Automatic cleanup of unreferenced images  
-
-[Be patient: images coming soon!]
+- Automatic cleanup of unreferenced images
+- 
+<img alt="gallery" src="https://github.com/user-attachments/assets/fd372f6d-bb1f-4b52-91fc-addf747488c9" />
 
 ### Prompt Workflow  
 - “Magic Prompt” enhancement (Using Gemini 2.5 Flash Lite for cost effectiveness and speed)  
