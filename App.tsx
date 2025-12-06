@@ -488,9 +488,9 @@ export default function App() {
 
             const allMessagesInChat = await db.messages.where('chatId').equals(chatId).sortBy('timestamp');
 
-            // Optimization: Only send images for the last 3 messages (turns) to avoid Payload Too Large errors.
+            // Optimization: Only send images for the last 8 messages (turns) to avoid Payload Too Large errors.
             // We always send the full text history for context.
-            const IMAGE_HISTORY_LIMIT = 3;
+            const IMAGE_HISTORY_LIMIT = 8;
             const imageInclusionStartIndex = Math.max(0, allMessagesInChat.length - IMAGE_HISTORY_LIMIT);
 
             for (let i = 0; i < allMessagesInChat.length; i++) {
