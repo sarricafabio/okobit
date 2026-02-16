@@ -1,5 +1,21 @@
 # Okobit Changelog
 
+## Version 1.2.0 (2025-12-14)
+
+### New Features
+- **Light Mode**: Introduced a fully functional Light Mode with a simple toggle switch in Settings
+- **Custom Color Picker**: Built a custom, cohesive color picker (Hue & Saturation/Value) to replace the native browser input, featuring better UI integration and better performance compared to the laggy (when dragging) and ugly chrome color picker
+- **Smart Text Contrast**: Accent-colored buttons now automatically switch their text color (black vs white) based on brightness for optimal readability with all accent colors
+
+### UI/UX Improvements
+- **GitHub Link**: Added clickable GitHub repository card in settings modal
+- **Mobile UX Improvements**: Hidden keyboard cheat sheet button on mobile devices (only shown on tablets and desktop). Renamed safety settings for clarity.
+- **Export Polish**: Added a green checkmark success indicator for successful data exports (previously it was the same icon as an error status)
+- **Cleaner Modals**: Hid default scrollbars in Settings modal for a sleeker look across all browsers
+- **Copy Button Fix**: The copy icon in user chat bubbles sometimes disappeared or changed functionality (e.g., to download image) under various conditions, especially when messages included images. The icon now consistently remains visible for all user messages and always functions to copy the message text
+
+---
+
 ## Version 1.1.0 (2025-12-08)
 
 ### Major Improvements

@@ -104,14 +104,14 @@ export const GlobalModal: React.FC<GlobalModalProps> = ({ config, onClose }) => 
             <div className="flex justify-between items-start mb-4">
               <div
                 className={`p-3 rounded-full ${config.type === 'alert'
-                  ? (config.title === 'Success'
+                  ? (config.title === 'Success' || config.title === 'Export Complete'
                     ? 'bg-green-500/20 text-green-400'
                     : 'bg-danger-bg text-danger')
                   : 'bg-bg-element text-accent'
                   }`}
               >
                 {config.type === 'alert'
-                  ? (config.title === 'Success'
+                  ? (config.title === 'Success' || config.title === 'Export Complete'
                     ? <Icon name="check-circle" />      // green tick
                     : <Icon name="alert" />)            // red alert (unchanged)
                   : config.type === 'shortcuts'
@@ -205,7 +205,7 @@ export const GlobalModal: React.FC<GlobalModalProps> = ({ config, onClose }) => 
               <button
                 onClick={handleConfirm}
                 disabled={isValidating}
-                className="px-6 py-2 rounded-lg text-sm font-bold bg-accent text-black hover:brightness-110 transition-transform active:scale-95 shadow-lg shadow-accent/20 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                className="px-6 py-2 rounded-lg text-sm font-bold bg-accent text-[var(--text-on-accent)] hover:brightness-110 transition-transform active:scale-95 shadow-lg shadow-accent/20 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
               >
                 {isValidating && isWelcome && <Icon name="sparkles" className="w-3.5 h-3.5 animate-spin" />}
                 {isValidating ? "Validating..." : (config.confirmText || "OK")}

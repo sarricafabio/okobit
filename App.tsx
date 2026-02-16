@@ -186,8 +186,30 @@ export default function App() {
         const g = parseInt(config.themeAccent.slice(3, 5), 16);
         const b = parseInt(config.themeAccent.slice(5, 7), 16);
         root.style.setProperty('--accent-dim', `rgba(${r}, ${g}, ${b}, 0.1)`);
+
+        if (config.lightMode) {
+            root.classList.add('light');
+        } else {
+            root.classList.remove('light');
+        }
+
+
         localStorage.setItem('okobit_config', JSON.stringify(config));
     }, [config]);
+
+    // Dynamic Text Contrast (runs only when settings are close to save performance as requested)
+    useEffect(() => {
+        if (!settingsOpen) {
+            const hex = config.themeAccent.replace('#', '');
+            const r = parseInt(hex.substring(0, 2), 16);
+            const g = parseInt(hex.substring(2, 4), 16);
+            const b = parseInt(hex.substring(4, 6), 16);
+            // YIQ equation
+            const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+            document.documentElement.style.setProperty('--text-on-accent', yiq >= 128 ? '#000000' : '#ffffff');
+        }
+    }, [config.themeAccent, settingsOpen]);
+
 
     // Auto-resize textarea
     useEffect(() => {
@@ -1225,7 +1247,7 @@ export default function App() {
 
                             {currentChat && (
                                 <div className="absolute bottom-6 left-0 right-0 px-4 z-20 flex justify-center pointer-events-none">
-                                    <div className="w-full max-w-3xl bg-black/50 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-3 pointer-events-auto transition-all focus-within:border-accent focus-within:ring-1 focus-within:ring-accent/20 animate-slide-up">
+                                    <div className="w-full max-w-3xl bg-[var(--bg-prompt)] backdrop-blur-xl border border-[var(--border-light)] rounded-2xl shadow-2xl p-3 pointer-events-auto transition-all focus-within:border-accent focus-within:ring-1 focus-within:ring-accent/20 animate-slide-up">
                                         {attachedFiles.length > 0 && (
                                             <div className="flex gap-2 overflow-x-auto pb-2 mb-2 animate-fade-in scrollbar-thin scrollbar-thumb-bg-element scrollbar-track-transparent">
                                                 {attachedFiles.map((f, i) => {
@@ -1316,7 +1338,7 @@ export default function App() {
                                             </div>
                                         </div>
 
-                                        <div className="flex items-center justify-between mt-2 pt-2 border-t border-white/5">
+                                        <div className="flex items-center justify-between mt-2 pt-2 border-t border-[var(--border-light)]">
                                             <div className="flex items-center gap-1">
                                                 <label className="p-2 rounded-lg hover:bg-bg-element text-text-secondary hover:text-text-primary cursor-pointer transition-all hover:scale-110 active:scale-95" title="Attach File">
                                                     <input type="file" multiple className="hidden" disabled={isMagicLoading} onChange={(e) => { if (e.target.files) setAttachedFiles(prev => [...prev, ...Array.from(e.target.files!)]) }} />
@@ -1341,7 +1363,7 @@ export default function App() {
                                                     <Icon name="stop" className="w-4 h-4" /> Stop
                                                 </button>
                                             ) : (
-                                                <button onClick={() => handleSendMessage()} disabled={isMagicLoading || (!promptText.trim() && attachedFiles.length === 0)} className="flex items-center gap-2 bg-text-primary text-black hover:bg-accent disabled:opacity-50 disabled:cursor-not-allowed font-semibold text-sm px-4 py-2 rounded-lg transition-all active:scale-95">
+                                                <button onClick={() => handleSendMessage()} disabled={isMagicLoading || (!promptText.trim() && attachedFiles.length === 0)} className="flex items-center gap-2 bg-text-primary text-bg-base hover:bg-accent hover:text-[var(--text-on-accent)] disabled:opacity-50 disabled:cursor-not-allowed font-semibold text-sm px-4 py-2 rounded-lg transition-all active:scale-95">
                                                     Generate <Icon name="send" className="w-4 h-4" />
                                                 </button>
                                             )}
